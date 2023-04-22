@@ -39,7 +39,7 @@ describe('ApiMethods', () => {
   const mockAuth: Authenticator = (props: any) => props
   const api = new APIMethods(session, 'mock')
   api.apiVersion = apiVersion
-  api.apiPath = `${settings.base_url}/api/${apiVersion}`
+  api.apiPath = `${settings.base_url}`
 
   it('relative path without auth is just base', () => {
     const actual = api.makePath('/login', settings)

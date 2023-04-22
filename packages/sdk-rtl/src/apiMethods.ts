@@ -51,7 +51,7 @@ export const functionalSdk = (
   sdk.apiPath =
     authSession.settings.base_url === ''
       ? ''
-      : authSession.settings.base_url + '/api/' + apiVersion
+      : authSession.settings.base_url
   return sdk
 }
 
